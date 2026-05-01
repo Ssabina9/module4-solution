@@ -1,0 +1,13 @@
+(function (window) {
+  var NameFinder = {};
+
+  NameFinder.makeGreeting = function (name) {
+    if (name.toLowerCase().charAt(0) === "j") {
+      return "Goodbye " + name;
+    } else {
+      return "Hello " + name;
+    }
+  };
+
+  window.NameFinder = NameFinder;
+})(window);
